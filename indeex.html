@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <!--browser event:
+        click
+        contextmenu
+        mouseover
+        mouseout
+        mousedown/mouseup
+        submit focus
+        domcontent loaded
+
+    -->
+    <div class="container">
+      <h1>Thi si smy heading</h1>
+      <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, sed
+        et officiis sapiente, nobis mollitia blanditiis, doloribus quidem quod
+        explicabo commodi vero! Pariatur laborum, nobis, aliquid autem
+        perferendis blanditiis molestiae adipisci ea maiores, consequatur cum.
+        Commodi libero possimus nostrum est eveniet quia fugiat saepe dolores,
+        asperiores sunt quos maiores adipisci sint ratione magnam animi
+        officiis, ipsum dolorum ex debitis, corrupti iste voluptas expedita!
+        Sint rem molestiae odio commodi quo quod culpa repudiandae, earum quas,
+        ducimus temporibus, dolor quia odit libero aut fugiat aperiam.
+        Blanditiis saepe omnis ab maiores quaerat, quo incidunt quos aliquam
+        error debitis voluptas exercitationem explicabo magni, aliquid unde
+        laborum, culpa doloremque inventore eos sunt in! Omnis doloremque
+        explicabo praesentium. Voluptate, magni. Accusantium, consequuntur
+        facilis. Autem dignissimos nam sequi praesentium deleniti doloribus
+        consequatur veritatis! Labore, corporis cum nobis libero, facilis
+        architecto maxime aperiam exercitationem, quae delectus saepe. Maxime
+        nesciunt harum provident dolorum, laudantium ipsa libero voluptate velit
+        soluta est fugiat debitis, facere sint, quis itaque minus alias sequi
+        doloribus eaque esse fugit. Nemo temporibus eos aliquam porro enim
+        nobis, quam inventore neque hic ad a minima perferendis autem ducimus
+        corporis, ut quibusdam dolore eum quos quas. Voluptatibus excepturi
+        pariatur dicta laborum accusamus maiores quidem consequatur ipsa.
+        Laudantium accusantium accusamus velit consequatur qui consequuntur
+        deserunt ipsa explicabo ab est dignissimos at molestiae, error unde
+        expedita voluptatibus dicta? Unde cum, hic deleniti est ducimus quas
+        omnis, illo harum itaque nihil non exercitationem ea!
+      </p>
+    </div>
+    <button id="btn" onclick="toogleHide()">show/hide</button>
+    <script>
+        function toogleHide(){
+           let btn =document.getElementById('btn');
+           let para =document.getElementById('para');
+           if(para.style.display !="none"){
+            para.style.display ='none';
+         }
+         else{
+           para.style.display='block' ;
+         }
+           }
+    </script>
+  </body>
+</html>
